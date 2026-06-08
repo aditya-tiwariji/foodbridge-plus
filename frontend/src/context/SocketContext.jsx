@@ -19,8 +19,12 @@ export const SocketProvider = ({ children }) => {
       return;
     }
 
-    const apiBaseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001/api/v1';
-    const socketUrl = import.meta.env.VITE_SOCKET_URL || apiBaseUrl.replace('/api/v1', '');
+    let rawApiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001/api/v1';
+    if (rawApiUrl && !rawApiUrl.endsWith('/api/v1') && !rawApiUrl.endsWith('/api/v1/')) {
+      rawApiUrl = rawApiUrl.endsWith('/') ? `${rawApiUrl}api/v1` : `${rawApiUrl}/api/v1`;
+    }
+    const apiBaseUrl = rawApiUrl;
+    const socketUrl = import.meta.env.VITE_SOCKET_URL || apiBaseUrl.replace(/\/api\/v1\/?$/, '');
 
     const socketInstance = io(socketUrl, {
       autoConnect: true,
