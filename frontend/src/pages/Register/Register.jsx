@@ -129,7 +129,7 @@ const Register = () => {
       };
 
       const regData = await signup(signupPayload);
-      setToast({ message: 'Welcome to FoodBridge! Registration successful.', type: 'success' });
+      setToast({ message: 'Welcome to FoodBridge+! Registration successful.', type: 'success' });
       
       let redirectRoute = '/dashboard';
       if (regData.role === 'ngo' || regData.role === 'recipient') {
@@ -168,7 +168,7 @@ const Register = () => {
               <UserPlus className="h-6 w-6" />
             </div>
             <h2 className="text-2xl font-bold text-slate-800">Create Account</h2>
-            <p className="text-slate-500 text-sm mt-1">Join the FoodBridge community today</p>
+            <p className="text-slate-500 text-sm mt-1">Join the FoodBridge+ community today</p>
           </div>
 
           <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">

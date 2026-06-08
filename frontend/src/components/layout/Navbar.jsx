@@ -29,7 +29,7 @@ const Navbar = () => {
                 <HeartHandshake className="h-6 w-6" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
-                FoodBridge
+                FoodBridge+
               </span>
             </Link>
           </div>

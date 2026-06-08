@@ -60,7 +60,7 @@ const Footer = () => {
               <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-400">
                 <HeartHandshake className="h-5 w-5" />
               </div>
-              <span className="text-lg font-bold text-white">FoodBridge</span>
+              <span className="text-lg font-bold text-white">FoodBridge+</span>
             </div>
             <p className="text-sm">
               Connecting hotels, restaurants, and grocery stores with local NGOs to redirect surplus food and support vulnerable families.
@@ -123,7 +123,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-slate-800 mt-12 pt-6 text-center text-xs">
-          <p>© {new Date().getFullYear()} FoodBridge. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} FoodBridge+. All rights reserved.</p>
         </div>
       </Container>
     </footer>

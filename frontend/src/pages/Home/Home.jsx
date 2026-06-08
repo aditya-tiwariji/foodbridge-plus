@@ -44,7 +44,7 @@ const Home = () => {
         </h1>
 
         <p className="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl font-medium leading-relaxed">
-          FoodBridge connects local food businesses, supermarkets, and hospitality partners directly with NGOs and community shelters to feed those in need in real-time.
+          FoodBridge+ connects local food businesses, supermarkets, and hospitality partners directly with NGOs and community shelters to feed those in need in real-time.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
@@ -60,7 +60,7 @@ const Home = () => {
       {/* Feature Sections */}
       <Container className="py-20 border-t border-slate-100">
         <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">
-          How FoodBridge Works
+          How FoodBridge+ Works
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="flex flex-col items-center text-center p-8 bg-white hover:translate-y-[-4px] transition-transform duration-200">

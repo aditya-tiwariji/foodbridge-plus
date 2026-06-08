@@ -83,7 +83,7 @@ const Login = () => {
               <LogIn className="h-6 w-6" />
             </div>
             <h2 className="text-2xl font-bold text-slate-800">Sign In</h2>
-            <p className="text-slate-500 text-sm mt-1">Access your FoodBridge account</p>
+            <p className="text-slate-500 text-sm mt-1">Access your FoodBridge+ account</p>
           </div>
 
           <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5">
